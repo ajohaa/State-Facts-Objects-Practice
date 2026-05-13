@@ -1,5 +1,5 @@
 const sharkData = {
-	ok: {
+	shark1: {
 		name: 'placeholder',
 		scientificName: 'placeholder',
 		order: 'placeholder',
@@ -7,11 +7,11 @@ const sharkData = {
 		size: 'placeholder',
 		habitat: 'placeholder',
 		diet: 'placeholder',
-		color: 'placeholder',
+		lifespan: 'placeholder',
 		conservationStatus: 'placeholder',
 		funFact: 'placeholder'
 	},
-	yeah: {
+	shark2: {
 		name: 'placeholder',
 		scientificName: 'placeholder',
 		order: 'placeholder',
@@ -19,7 +19,7 @@ const sharkData = {
 		size: 'placeholder',
 		habitat: 'placeholder',
 		diet: 'placeholder',
-		color: 'placeholder',
+		lifespan: 'placeholder',
 		conservationStatus: 'placeholder',
 		funFact: 'placeholder'
 	}

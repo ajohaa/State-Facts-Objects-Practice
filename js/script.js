@@ -1,18 +1,16 @@
-let stateList = document.getElementById("state-list");
+let sharkList = document.getElementById("shark-list");
 
-stateList.onchange = function () {
+sharkList.onchange = function () {
     let selected = this.value;
-    document.getElementById("info-pic").src = `img/${stateData[selected].abbr.toLowerCase()}.jpg`
-        document.getElementById("info-pic").textContent = (stateData[selected].name);
-    document.getElementById("info-abbreviation").textContent = (stateData[selected].abbr);
-    document.getElementById("info-capitol").textContent = (stateData[selected].capitol);
-    document.getElementById("info-population").textContent = (stateData[selected].pop);
-    document.getElementById("info-statehood").textContent = (stateData[selected].statehood);
-    document.getElementById("info-mammal").textContent = (stateData[selected].mammal);
-    document.getElementById("info-bird").textContent = (stateData[selected].bird);
-    document.getElementById("info-tree").textContent = (stateData[selected].tree);
-    document.getElementById("info-flower").textContent = (stateData[selected].flower);
-    document.getElementById("info-nickname").textContent = (stateData[selected].nickname);
+    document.getElementById("shark-img").src = `img/${order}.jpg`
+    document.getElementById("shark-name").textContent = (sharkData[selected].name);
+    document.getElementById("scientific-name").textContent = (sharkData[selected].scientificName);
+    document.getElementById("order").textContent = (sharkData[selected].order);
+    document.getElementById("appearance").textContent = (sharkData[selected].appearance);
+    document.getElementById("size").textContent = (sharkData[selected].size);
+    document.getElementById("habitat").textContent = (sharkData[selected].habitat);
+    document.getElementById("diet").textContent = (sharkData[selected].diet);
+    document.getElementById("lifespan").textContent = (sharkData[selected].lifespan);
+    document.getElementById("conservation-status").textContent = (sharkData[selected].conservationStatus);
+    document.getElementById("fun-fact").textContent = (sharkData[selected].funFact);
 };
-
-// oh my god i am so hungry

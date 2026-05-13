@@ -1,57 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-us">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Template</title>
-
-    <!-- Bootstrap CSS -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shark Facts</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Martel+Sans:400,900"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <style>
-      body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      header {
-        position: relative;
-        height: 350px;
-        overflow: hidden;
-      }
-
-      header img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .header-title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.45);
-        padding: 1rem 2rem;
-        border-radius: 12px;
-      }
-
-      .card img {
-        height: 200px;
-        object-fit: cover;
-      }
-
-      footer {
-        margin-top: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
+
+  <body>
 
   <body>
     <!-- NAVBAR -->
@@ -87,13 +53,24 @@
     </nav>
 
     <!-- HEADER -->
-    <header>
+    <header class="clearfix">
       <img src="https://picsum.photos/1600/500" alt="Header Image" />
 
       <div class="header-title">
-        <h1>Main Page Title</h1>
+        <h1>Shark Facts</h1>
         <p>Your subtitle or tagline goes here</p>
       </div>
+      <select id="state-list">
+        <option value="blank">choose...</option>
+        <option value="carcharhiniformes">Carcharhiniformes</option>
+        <option value="heterodontiformes">Heterodontiformes</option>
+        <option value="hexanchiformes">Hexanchiformes</option>
+        <option value="lamniformes">Lamniformes</option>
+        <option value="orectolobiformes">Orectolobiformes</option>
+        <option value="pristiophoriformes">Pristiophoriformes</option>
+        <option value="squaliformes">Squaliformes</option>
+        <option value="squatiniformes">Squatiniformes</option>
+      </select>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -113,8 +90,6 @@
               <p class="card-text">
                 Placeholder text for this card. Add your own content here.
               </p>
-
-              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -133,8 +108,6 @@
               <p class="card-text">
                 Placeholder text for this card. Add your own content here.
               </p>
-
-              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -142,83 +115,50 @@
         <!-- CARD 3 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <img
-              src="https://picsum.photos/400/300?random=3"
+   <img
+              src="https://picsum.photos/400/300?random=2"
               class="card-img-top"
               alt="Placeholder Image"
+              id="shark-img"
             />
-
             <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">
-                Placeholder text for this card. Add your own content here.
-              </p>
-
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <h5 class="card-title" id="shark-name">Card Title</h5>
+              <div class="info-holder">
+                <p>
+                  <strong>Scientific Name: </strong
+                  ><span id="scientific-name">placeholder</span>
+                </p>
+                <p>
+                  <strong>Order: </strong><span id="order">placeholder</span>
+                </p>
+                <p>
+                  <strong>Appearance: </strong
+                  ><span id="appearance">placeholder</span>
+                </p>
+                <p><strong>Size: </strong><span id="size">placeholder</span></p>
+                <p>
+                  <strong>Habitat & Range: </strong
+                  ><span id="habitat-range">placeholder</span>
+                </p>
+                <p><strong>Diet: </strong><span id="diet">placeholder</span></p>
+                <p>
+                  <strong>Lifespan: </strong
+                  ><span id="lifespan">placeholder</span>
+                </p>
+                <p>
+                  <strong>Conservation Status: </strong
+                  ><span id="conservation-status">placeholder</span>
+                </p>
+                <p>
+                  <strong>Fun Fact: </strong
+                  ><span id="fun-fact">placeholder</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-
-    <div class="outer-wrapper">
-      <header class="clearfix">
-        <h1>Shark Facts</h1>
-        <select id="state-list">
-          <option value="blank">choose...</option>
-          <option value="carcharhiniformes">Carcharhiniformes</option>
-          <option value="heterodontiformes">Heterodontiformes</option>
-          <option value="hexanchiformes">Hexanchiformes</option>
-          <option value="lamniformes">Lamniformes</option>
-          <option value="orectolobiformes">Orectolobiformes</option>
-          <option value="pristiophoriformes">Pristiophoriformes</option>
-          <option value="squaliformes">Squaliformes</option>
-          <option value="squatiniformes">Squatiniformes</option>
-        </select>
-      </header>
-      <div class="main clearfix">
-        <div class="img-holder">
-          <div>
-            <img
-              id="shark-img"
-              src="img/shark.jpg"
-              alt="shark"
-              width="260"
-              height="260"
-            />
-            <p id="shark-name">shark</p>
-          </div>
-        </div>
-        <div class="info-holder">
-          <p>
-            <strong>Scientific Name: </strong
-            ><span id="scientific-name">placeholder</span>
-          </p>
-          <p><strong>Order: </strong><span id="order">placeholder</span></p>
-          <p>
-            <strong>Appearance: </strong
-            ><span id="appearance">placeholder</span>
-          </p>
-          <p><strong>Size: </strong><span id="size">placeholder</span></p>
-          <p>
-            <strong>Habitat & Range: </strong
-            ><span id="habitat-range">placeholder</span>
-          </p>
-          <p><strong>Diet: </strong><span id="diet">placeholder</span></p>
-          <p>
-            <strong>Lifespan: </strong><span id="lifespan">placeholder</span>
-          </p>
-          <p>
-            <strong>Conservation Status: </strong
-            ><span id="conservation-status">placeholder</span>
-          </p>
-          <p>
-            <strong>Fun Fact: </strong><span id="fun-fact">placeholder</span>
-          </p>
-        </div>
-      </div>
-    </div>
-
     <!-- FOOTER -->
     <footer class="bg-dark text-white text-center py-3">
       <p class="mb-0">© 2026 MySite. All rights reserved.</p>

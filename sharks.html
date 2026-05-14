@@ -1,23 +1,18 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shark Facts</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Martel+Sans:400,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shark Facts</title>
+  <link href="https://fonts.googleapis.com/css?family=Martel+Sans:400,900" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
 
   <body>
     <!-- NAVBAR -->
@@ -25,12 +20,7 @@
       <div class="container">
         <a class="navbar-brand" href="infex.html">MySite</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -60,18 +50,26 @@
         <h1>Shark Facts</h1>
         <p>Your subtitle or tagline goes here</p>
       </div>
-      <select id="state-list">
-        <option value="blank">choose...</option>
-        <option value="carcharhiniformes">Carcharhiniformes</option>
-        <option value="heterodontiformes">Heterodontiformes</option>
-        <option value="hexanchiformes">Hexanchiformes</option>
-        <option value="lamniformes">Lamniformes</option>
-        <option value="orectolobiformes">Orectolobiformes</option>
-        <option value="pristiophoriformes">Pristiophoriformes</option>
-        <option value="squaliformes">Squaliformes</option>
-        <option value="squatiniformes">Squatiniformes</option>
-      </select>
     </header>
+
+    <div class="row mt-5 align-items-center justify-content-center">
+      <div class="col-auto">
+        <h2>Order</h2>
+      </div>
+      <div class="col-auto">
+        <select class="dropdown text-center" id="shark-list">
+          <option value="all">All</option>
+          <option value="carcharhiniformes">Carcharhiniformes</option>
+          <option value="heterodontiformes">Heterodontiformes</option>
+          <option value="hexanchiformes">Hexanchiformes</option>
+          <option value="lamniformes">Lamniformes</option>
+          <option value="orectolobiformes">Orectolobiformes</option>
+          <option value="pristiophoriformes">Pristiophoriformes</option>
+          <option value="squaliformes">Squaliformes</option>
+          <option value="squatiniformes">Squatiniformes</option>
+        </select>
+      </div>
+    </div>
 
     <!-- MAIN CONTENT -->
     <main class="container my-5">
@@ -79,17 +77,35 @@
         <!-- CARD 1 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <img
-              src="https://picsum.photos/400/300?random=1"
-              class="card-img-top"
-              alt="Placeholder Image"
-            />
+            <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="Placeholder Image" />
 
             <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">
-                Placeholder text for this card. Add your own content here.
-              </p>
+              <h5 class="card-title text-center" id="shark-name">Card Title</h5>
+              <div class="info-holder">
+                <p>
+                  <strong>Scientific Name: </strong><span id="scientific-name">placeholder</span>
+                </p>
+                <p>
+                  <strong>Order: </strong><span id="order">placeholder</span>
+                </p>
+                <p>
+                  <strong>Appearance: </strong><span id="appearance">placeholder</span>
+                </p>
+                <p><strong>Size: </strong><span id="size">placeholder</span></p>
+                <p>
+                  <strong>Habitat & Range: </strong><span id="habitat-range">placeholder</span>
+                </p>
+                <p><strong>Diet: </strong><span id="diet">placeholder</span></p>
+                <p>
+                  <strong>Lifespan: </strong><span id="lifespan">placeholder</span>
+                </p>
+                <p>
+                  <strong>Conservation Status: </strong><span id="conservation-status">placeholder</span>
+                </p>
+                <p>
+                  <strong>Fun Fact: </strong><span id="fun-fact">placeholder</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -97,17 +113,35 @@
         <!-- CARD 2 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <img
-              src="https://picsum.photos/400/300?random=2"
-              class="card-img-top"
-              alt="Placeholder Image"
-            />
+            <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="Placeholder Image" />
 
             <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">
-                Placeholder text for this card. Add your own content here.
-              </p>
+              <h5 class="card-title text-center" id="shark-name">Card Title</h5>
+              <div class="info-holder">
+                <p>
+                  <strong>Scientific Name: </strong><span id="scientific-name">placeholder</span>
+                </p>
+                <p>
+                  <strong>Order: </strong><span id="order">placeholder</span>
+                </p>
+                <p>
+                  <strong>Appearance: </strong><span id="appearance">placeholder</span>
+                </p>
+                <p><strong>Size: </strong><span id="size">placeholder</span></p>
+                <p>
+                  <strong>Habitat & Range: </strong><span id="habitat-range">placeholder</span>
+                </p>
+                <p><strong>Diet: </strong><span id="diet">placeholder</span></p>
+                <p>
+                  <strong>Lifespan: </strong><span id="lifespan">placeholder</span>
+                </p>
+                <p>
+                  <strong>Conservation Status: </strong><span id="conservation-status">placeholder</span>
+                </p>
+                <p>
+                  <strong>Fun Fact: </strong><span id="fun-fact">placeholder</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -115,43 +149,33 @@
         <!-- CARD 3 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-   <img
-              src="https://picsum.photos/400/300?random=2"
-              class="card-img-top"
-              alt="Placeholder Image"
-              id="shark-img"
-            />
+            <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="Placeholder Image"
+              id="shark-img" />
             <div class="card-body">
-              <h5 class="card-title" id="shark-name">Card Title</h5>
+              <h5 class="card-title text-center" id="shark-name">Card Title</h5>
               <div class="info-holder">
                 <p>
-                  <strong>Scientific Name: </strong
-                  ><span id="scientific-name">placeholder</span>
+                  <strong>Scientific Name: </strong><span id="scientific-name">placeholder</span>
                 </p>
                 <p>
                   <strong>Order: </strong><span id="order">placeholder</span>
                 </p>
                 <p>
-                  <strong>Appearance: </strong
-                  ><span id="appearance">placeholder</span>
+                  <strong>Appearance: </strong><span id="appearance">placeholder</span>
                 </p>
                 <p><strong>Size: </strong><span id="size">placeholder</span></p>
                 <p>
-                  <strong>Habitat & Range: </strong
-                  ><span id="habitat-range">placeholder</span>
+                  <strong>Habitat & Range: </strong><span id="habitat-range">placeholder</span>
                 </p>
                 <p><strong>Diet: </strong><span id="diet">placeholder</span></p>
                 <p>
-                  <strong>Lifespan: </strong
-                  ><span id="lifespan">placeholder</span>
+                  <strong>Lifespan: </strong><span id="lifespan">placeholder</span>
                 </p>
                 <p>
-                  <strong>Conservation Status: </strong
-                  ><span id="conservation-status">placeholder</span>
+                  <strong>Conservation Status: </strong><span id="conservation-status">placeholder</span>
                 </p>
                 <p>
-                  <strong>Fun Fact: </strong
-                  ><span id="fun-fact">placeholder</span>
+                  <strong>Fun Fact: </strong><span id="fun-fact">placeholder</span>
                 </p>
               </div>
             </div>
@@ -167,4 +191,5 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
+
 </html>
